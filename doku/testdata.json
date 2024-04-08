@@ -1,0 +1,1129 @@
+{
+  "lecturers": [
+    {
+      "user": "turing",
+      "name": "Alan Turing",
+      "title": "Dr. OBE FRS",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png",
+      "timeline": [
+        {
+          "year": 1936,
+          "text": "Veröffentlichung einer wegweisenden Arbeit über Berechenbarkeit und die Grenzen formaler mathematischer Systeme, die grundlegende Fragen zur Machbarkeit von Problemlösungen aufwirft und die Grundlage für die Computerwissenschaft legt."
+        },
+        {
+          "year": 1940,
+          "text": "Arbeit für die britische Regierung an der Entschlüsselung der Enigma, um deutsche Funksprüche zu knacken, was den Verlauf des Krieges maßgeblich beeinflusst."
+        },
+        {
+          "year": 1952,
+          "text": "Verurteilung wegen Homosexualität. Infolge dessen Suizid 1954 und posthume Begnadigung 2013 durch Königin Elisabeth II."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.6,
+        "commitment": 0.6,
+        "clarity": 0.8,
+        "kindness": 0.4
+      },
+      "modules": [
+        5181,
+        5179,
+        5180,
+        5100,
+        5101
+      ],
+      "suggestions": [
+        "einstein", "descartes", "euler", "hawking", "newton"
+      ]
+    },
+    {
+      "user": "neumann",
+      "name": "John von Neumann",
+      "title": "Prof. Dr.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/78/HD.3F.191_%2811239892036%29.jpg",
+      "timeline": [
+        {
+          "year": 1932,
+          "text": "Veröffentlichung eines grundlegenden Werkes zur Quantenmechanik, das die wissenschaftliche Gemeinschaft revolutioniert und neue Denkweisen in der Physik etabliert."
+        },
+        {
+          "year": 1943,
+          "text": "Beteiligung am Manhattan-Projekt. Danach ab 1945 Beteiligung an der Entwicklung des ersten elektronischen Großrechners, der die Grundlage für die moderne Computerarchitektur legt und die technologische Landschaft entscheidend verändert."
+        },
+        {
+          "year": 1950,
+          "text": "Veröffentlichung eines wegweisenden Werkes über die Spieltheorie und ihre Anwendungen in den Wirtschaftswissenschaften, das einen neuen Ansatz für die Analyse von Entscheidungsprozessen einführt und seine Bedeutung für verschiedene Disziplinen unterstreicht."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.4,
+        "commitment": 0.5,
+        "clarity": 0.5,
+        "kindness": 0.2
+      },
+      "modules": [
+        5155,
+        5194,
+        5237,
+        5142,
+        5174
+      ],
+      "suggestions": [
+        "turing", "lovelace", "leibniz", "hawking", "zuse"
+      ]
+    },
+    {
+      "user": "lovelace",
+      "name": "Augusta Ada King-Noel",
+      "title": "Countess of Lovelace",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ada_Lovelace_in_watercolour.png",
+      "timeline": [
+        {
+          "year": 1833,
+          "text": "Zusammenarbeit mit Charles Babbage an seinen mechanischen Analytical Engine, wobei sie umfassende Notizen verfasst, die als \"Notizen\" bekannt werden und als erste Beschreibung eines programmierbaren Computers gelten."
+        },
+        {
+          "year": 1842,
+          "text": "Veröffentlichung der Übersetzung und Anmerkungen zu Luigi Menabreas Artikel über die Analytical Engine, in denen sie ausführlich ihre Vision von der Möglichkeit der Maschinen, nicht nur Zahlen zu berechnen, sondern auch Texte zu generieren und kreative Aufgaben auszuführen, beschreibt."
+        },
+        {
+          "year": 1852,
+          "text": "Nach ihrem Tod werden ihre Arbeiten und Ideen von der wissenschaftlichen Gemeinschaft neu entdeckt und gewürdigt, wodurch sie posthum als eine der ersten Computerprogrammiererinnen und Pionierinnen der Informatik anerkannt wird."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.5,
+        "commitment": 0.4,
+        "clarity": 0.3,
+        "kindness": 0.6
+      },
+      "modules": [
+        5155,
+        5198,
+        5101,
+        5214,
+        5142
+      ],
+      "suggestions": [
+        "neumann", "zuse", "euler", "hawking", "hilbert"
+      ]
+    },
+    {
+      "user": "leibniz",
+      "name": "Gottfried Wilhelm Leibniz",
+      "title": "Dr. phil. nat. h.c.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_%28ca._1695%29_%28cropped%29.jpg",
+      "timeline": [
+        {
+          "year": 1675,
+          "text": "Entwicklung des Differentialkalküls, einer grundlegenden mathematischen Methode zur Analyse von Änderungen und zur Berechnung von Ableitungen, die einen Meilenstein in der Entwicklung der Analysis darstellt."
+        },
+        {
+          "year": 1695,
+          "text": "Veröffentlichung der \"Neuen Abhandlungen über die Natur und die Kommunikation der Substanzen\", in denen Leibniz seine Theorie der Monadologie vorstellt, die die Grundlage für seine Metaphysik bildet."
+        },
+        {
+          "year": 1700,
+          "text": "Einführung des binären Zahlensystems, einer Methode zur Darstellung von Zahlen mit nur den Ziffern 0 und 1, die heute in der digitalen Datenverarbeitung weit verbreitet ist und einen Beitrag zur Entwicklung von Computerndarstellt."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.6,
+        "commitment": 0.3,
+        "clarity": 0.4,
+        "kindness": 0.7
+      },
+      "modules": [
+        5180,
+        5179,
+        5237,
+        5198,
+        5174
+      ],
+      "suggestions": [
+        "hilbert", "hawking", "euler", "turing", "leibniz"
+      ]
+    },
+    {
+      "user": "zuse",
+      "name": "Konrad Zuse",
+      "title": "Dr.-Ing. E. h.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Konrad_Zuse_Denkmal_im_Huenfelder_Stadtpark.JPG",
+      "timeline": [
+        {
+          "year": 1936,
+          "text": "Entwicklung des ersten funktionsfähigen programmgesteuerten Digitalrechners, der Z3, der einen Meilenstein in der Geschichte der Informatik darstellt und den Weg für die Entwicklung moderner Computer ebnet."
+        },
+        {
+          "year": 1941,
+          "text": "Abschluss der Arbeiten an der Z3 und Präsentation des Konzepts des binären Zahlensystems sowie der booleschen Algebra als Grundlage für die Funktionsweise von Computern, was eine revolutionäre Veränderung in der Berechnungstechnologie einleitet."
+        },
+        {
+          "year": 1950,
+          "text": "Veröffentlichung von \"Die Rechenmaschine\", einem Buch, das seine Arbeit an der Z3 und seine Vision von der Zukunft der Computer darstellt, und das maßgeblich dazu beiträgt, das Verständnis für die Bedeutung von Computern zu fördern."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.6,
+        "commitment": 0.5,
+        "clarity": 0.6,
+        "kindness": 0.5
+      },
+      "modules": [
+        5132,
+        5214,
+        5101,
+        5100,
+        5194
+      ],
+      "suggestions": [
+        "hawking", "newton", "euler", "hopper", "einstein"
+      ]
+    },
+    {
+      "user": "hopper",
+      "name": "Grace Hopper",
+      "title": "Rear Admiral",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Grace_Hopper_in_the_1940s.webp",
+      "timeline": [
+        {
+          "year": 1944,
+          "text": "Entwicklung des ersten funktionsfähigen Compilers, eines Programms, das menschenlesbaren Code in Maschinencode übersetzt, was die Programmierung von Computern erheblich vereinfacht und die Grundlage für die Entwicklung moderner Software legt."
+        },
+        {
+          "year": 1952,
+          "text": "Erstellung des ersten kommerziell erhältlichen Computersprachen-Übersetzers, des A-0 Systems, das die Grundlage für die Entwicklung von Programmiersprachen wie COBOL bildet und die Programmierung auf höherem Abstraktionsniveau ermöglicht."
+        },
+        {
+          "year": 1969,
+          "text": "Verleihung der Auszeichnung \"Man of the Year in Data Processing\" durch die Data Processing Management Association für ihre wegweisenden Beiträge zur Computerwissenschaft und ihr Engagement für die Förderung von Bildung und Innovation in der IT-Branche."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.9,
+        "commitment": 0.7,
+        "clarity": 0.3,
+        "kindness": 1.0
+      },
+      "modules": [
+        5100,
+        5194,
+        5181,
+        5155,
+        5174
+      ],
+      "suggestions": [
+        "newton", "hawking", "euler", "lovelace", "hilbert"
+      ]
+    },
+    {
+      "user": "hilbert",
+      "name": "David Hilbert",
+      "title": "Prof. Dr.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/David_Hilbert_postcard_retusche.jpg",
+      "timeline": [
+        {
+          "year": 1900,
+          "text": "Formulierung der berühmten Liste von 23 ungelösten mathematischen Problemen auf dem Internationalen Mathematikerkongress in Paris, die als \"Hilbertsche Probleme\" bekannt werden und die mathematische Forschung des 20. Jahrhunderts maßgeblich beeinflussen."
+        },
+        {
+          "year": 1928,
+          "text": "Entwicklung der Theorie der Hilbert-Räume, die einen fundamentalen Beitrag zur Funktionalanalysis und zur mathematischen Physik darstellt und zu wichtigen Entwicklungen in der Quantenmechanik führt."
+        },
+        {
+          "year": 1930,
+          "text": "Veröffentlichung der \"Grundlagen der Mathematik\", einem wegweisenden Werk, das einen formalen Ansatz zur Begründung der Mathematik bietet und einen wichtigen Beitrag zur Grundlagenforschung in der Mathematik leistet."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.2,
+        "commitment": 0.6,
+        "clarity": 0.4,
+        "kindness": 0.8
+      },
+      "modules": [
+        5132,
+        5237,
+        5142,
+        5155,
+        5142
+      ],
+      "suggestions": [
+        "hawking", "lovelace", "einstein", "neumann", "newton"
+      ]
+    },
+    {
+      "user": "einstein",
+      "name": "Albert Einstein",
+      "title": "Prof. Dr. phil. nat. h.c.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Albert_Einstein_in_watercolour.png",
+      "timeline": [
+        {
+          "year": 1905,
+          "text": "Veröffentlichung von vier bahnbrechenden Artikeln im \"Annus Mirabilis\", darunter die Spezielle Relativitätstheorie, die den Zusammenhang zwischen Raum und Zeit neu definiert, sowie die Erklärung des photoelektrischen Effekts."
+        },
+        {
+          "year": 1915,
+          "text": "Veröffentlichung der Allgemeinen Relativitätstheorie, die die Gravitation als Krümmung der Raumzeit beschreibt und neue Einsichten in die Struktur des Universums bietet, darunter die Vorhersage von Phänomenen wie Gravitationswellen und schwarzen Löchern."
+        },
+        {
+          "year": 1921,
+          "text": "Verleihung des Nobelpreises für Physik für seine Erklärung des photoelektrischen Effekts, der zwar einen wichtigen Beitrag zur Quantenphysik leistete, aber auch sein größeres Vermächtnis als einer der größten Physiker aller Zeiten weiter festigte."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.4,
+        "commitment": 0.6,
+        "clarity": 0.9,
+        "kindness": 0.8
+      },
+      "modules": [
+        5155,
+        5115,
+        5180,
+        5114,
+        5237
+      ],
+      "suggestions": [
+        "newton", "hilbert", "euler", "leibniz", "lovelace"
+      ]
+    },
+    {
+      "user": "newton",
+      "name": "Isaac Newton",
+      "title": "Sir",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Isaac_Newton_in_watercolour.png",
+      "timeline": [
+        {
+          "year": 1665,
+          "text": "Entwicklung des Binomischen Lehrsatzes und des Infinitesimalrechnung, die einen bedeutenden Fortschritt in der Mathematik darstellen und neue Methoden zur Lösung komplexer Probleme bieten."
+        },
+        {
+          "year": 1687,
+          "text": "Veröffentlichung der \"Mathematischen Prinzipien der Naturphilosophie\", einem wegweisenden Werk, das die Gravitationsgesetze beschreibt und die Grundlage für das Verständnis der klassischen Mechanik bildet."
+        },
+        {
+          "year": 1704,
+          "text": "Veröffentlichung von \"Opticks\", einem bedeutenden Werk über die Physik des Lichts, das die Wellentheorie des Lichts herausfordert und die Grundlage für die Entwicklung der modernen Optik legt."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.4,
+        "commitment": 0.7,
+        "clarity": 0.65,
+        "kindness": 0.45
+      },
+      "modules": [
+        5102,
+        5198,
+        5237,
+        5181,
+        5155
+      ],
+      "suggestions": [
+        "lovelace", "hopper", "descartes", "einstein", "newton"
+      ]
+    },
+    {
+      "user": "hawking",
+      "name": "Stephen Hawking",
+      "title": "Prof. Dr. CH CBE FRS",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Stephen_Hawking_in_watercolour.png",
+      "timeline": [
+        {
+          "year": 1974,
+          "text": "Entwicklung der Theorie, dass Schwarze Löcher im Laufe der Zeit Strahlung emittieren können, die heute als Hawking-Strahlung bekannt ist und grundlegende Erkenntnisse zur Quantenphysik und Gravitationstheorie liefert."
+        },
+        {
+          "year": 1988,
+          "text": "Veröffentlichung des Buches \"Eine kurze Geschichte der Zeit\", das zu einem Bestseller wird und komplexe wissenschaftliche Konzepte einem breiten Publikum zugänglich macht, was zu einer Popularisierung der Kosmologie und Astrophysik führt."
+        },
+        {
+          "year": 2009,
+          "text": "Initiierung des Breakthrough Listen-Projekts, das sich zum Ziel setzt, außerirdische Intelligenz im Universum zu suchen, und einen wichtigen Beitrag zur Erforschung des Universums und zur Suche nach außerirdischem Leben leistet."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.3,
+        "commitment": 0.4,
+        "clarity": 0.6,
+        "kindness": 0.5
+      },
+      "modules": [
+        5100 ,
+        5101,
+        5102,
+        5103,
+        5194
+      ],
+      "suggestions": [
+        "newton", "neumann", "einstein", "hawking", "descartes"
+      ]
+    },
+    {
+      "user": "euler",
+      "name": "Leonhard Euler",
+      "title": "Prof. Dr.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/EULER_HARLUQ.jpg",
+      "timeline": [
+        {
+          "year": 1736,
+          "text": "Formulierung des berühmten \"Sieben-Brücken-Problems\" in Königsberg, das als erstes Problem in der Graphentheorie gilt und den Grundstein für die Entwicklung dieses Teilgebiets der Mathematik legt."
+        },
+        {
+          "year": 1748,
+          "text": "Veröffentlichung des bahnbrechenden Werks \"Introductio in analysin infinitorum\", das grundlegende Konzepte der Analysis einführt und zur Entwicklung des modernen mathematischen Analysis beiträgt."
+        },
+        {
+          "year": 1760,
+          "text": "Beitrag zur Zahlentheorie durch die Entdeckung der sogenannten \"Eulerschen Zahl\", e, die eine wichtige Konstante in der Mathematik ist und in zahlreichen mathematischen und naturwissenschaftlichen Anwendungen Verwendung findet."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.5,
+        "commitment": 0.4,
+        "clarity": 0.6,
+        "kindness": 0.7
+      },
+      "modules": [
+        5155,
+        5179,
+        5103,
+        5100,
+        5142
+      ],
+      "suggestions": [
+        "turing", "leibniz", "newton", "hawking", "hopper"
+      ]
+    },
+    {
+      "user": "descartes",
+      "name": "René Descartes",
+      "title": "Dr. iur.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Ren%C3%A9_Descartes%2C_Bestanddeelnr_935-0844.jpg",
+      "timeline": [
+        {
+          "year": 1637,
+          "text": "Veröffentlichung von \"Discours de la Méthode\", einem wegweisenden Werk, das den Grundstein für die moderne Philosophie legt und die Prinzipien des rationalen Denkens sowie die Methode des Zweifels einführt."
+        },
+        {
+          "year": 1644,
+          "text": "Veröffentlichung der \"Principia Philosophiae\", in der Descartes seine philosophischen Ansichten weiter ausführt und bedeutende Beiträge zur Metaphysik, Ethik und Naturphilosophie leistet."
+        },
+        {
+          "year": 1650,
+          "text": "Formulierung der \"Cartesischen Koordinaten\", einem mathematischen System, das die Geometrie durch die Verwendung von algebraischen Gleichungen revolutioniert und die Grundlage für die Entwicklung des kartesischen Koordinatensystems legt."
+        }
+      ],
+      "rating": {
+        "punctuality": 0.7,
+        "commitment": 0.4,
+        "clarity": 0.3,
+        "kindness": 0.5
+      },
+      "modules": [
+        5132 ,
+        5179,
+        5180,
+        5194 ,
+        5179
+      ],
+      "suggestions": [
+        "turing", "neumann", "euler", "leibniz", "newton"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "num": 5181,
+      "name": "Software-Design",
+      "abbreviation": "SD",
+      "image": "../../assets/images/Programming.png",
+      "responsible": "turing",
+      "lecturers": [
+        "turing", "neumann"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "5. Semester", "Wahlpflichtmodul"],
+        ["Mechatronik (B.Sc.)", "5. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "3. Semester", "Pflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden lernen die Vorgehensweise zur Durchführung eines nicht sehr kleinen Softwareprojekts kennen. Zu Anfang wird nur die Idee für eine den Studierenden nützlichen Anwendung vorgestellt. Ausgehend von dieser Idee werden, durch den Dozenten geführt, die Phasen Anforderungsanalyse, Entwurf der Funktionalität mit Hilfe von Anwendungsfällen, Klassenentwurf und die Realisierung in der Technologie Angular (TypeScript, HTML, CSS) durchlaufen. Die Studierenden erarbeiten sich dann in einem vorgegebene Rahmen ihre eigene Implementierung der Anwendung und können diese zur Beurteilung per Email einreichen und anschließend präsentieren.",
+      "content": "Vorlesung: Software-Entwurf mit UML, Grundlagen der Software-Projektabwicklung, graphische Bedienoberflächen, Anwendung von Entwurfsmustern, Netzwerk-Anwendungen, Projektarbeit. Praktikum: Im Praktikum werden mehrere kleine Software-Entwicklungsaufgaben ausgeführt, wobei nach dem Muster der agilen Softwareentwicklung methodisch vorgegangen wird.",
+      "exam": "Klausur, Dauer 90 Minuten, oder Präsentation mit schriftlicher Zusammenfassung (20 Minuten / 10 Seiten), benotet. Die Note entspricht der Note für das Modul.",
+      "date": "2023-12-07T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.8,
+        "richness": 0.9,
+        "effort": 0.75,
+        "relevance": 1.0
+      },
+      "suggestions": [ 5198, 5103, 5180 , 5200 , 5194  ]
+    },
+    {
+      "num": 5179,
+      "name": "Programmieren 1",
+      "abbreviation": "PS1",
+      "image": "../../assets/images/Programming.png",
+      "responsible": "zuse",
+      "lecturers": [
+        "zuse", "hopper"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Data Science (B.Sc.)", "1. Semester", "Pflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "1. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "1. Semester", "Pflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden kennen die Grundelemente (Schlüsselwörter,\nAusdrücke, Eingabe/Ausgabe, usw.) einer prozeduralen\nProgrammierhochsprache (z.B. C) und der prozeduralen\nProgrammierung. Sie verstehen die zugrundeliegende Syntax und\nSemantik von Quelltexten in dieser Sprache sowie die\nZusammenhänge zwischen Quelltext, Compiler und\nComputerprogramm. Sie können eigenständig Quelltexte und\nComputerprogramme in dieser Sprache entwickeln sowie einfache\nAlgorithmen, Struktogramme und Programmablaufpläne. Spezielle\nDetailkenntnisse besitzen sie in der Formulierung syntaktisch korrekter\nAusdrücke, Anweisungen sowie Kontrollstrukturen.",
+      "content": "Vorlesung: Entwicklung der Computer und Programmiersprachen,\nRechnerarchitektur, Quelltextaufbau und Kompilieren, Begrifflichkeiten\n(Plattform, Prozessor, Linker, Prozess, Deklarieren, Initialisieren, usw.),\nStandard-Eingabe und -Ausgabe, Schlüsselwörter, Syntax und\nSemantik, formatierte Eingabe und Ausgabe, Eingabepuffer.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet.\nDie Note entspricht der Note für das Modul.",
+      "date": "2023-12-07T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.55,
+        "richness": 0.6,
+        "effort": 0.5,
+        "relevance": 0.8
+      },
+      "suggestions": [ 5194 , 5102 , 5155, 5180, 5181 ]
+    },
+    {
+      "num": 5180,
+      "name": "Programmieren 2",
+      "abbreviation": "PS2",
+      "image": "../../assets/images/Programming.png",
+      "responsible": "hopper",
+      "lecturers": [
+        "zuse", "hopper", "lovelace"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Mechatronik (B.Sc.)", "4. Semester", "Wahlpflichtmodul"],
+        ["Medizin- und Gesundheitstechnologie (B.Sc.)", "2. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "2. Semester", "Pflichtmodul"]
+      ],
+      "time": [
+        75,
+        75
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden lernen die wichtigsten Prinzipien der\nobjektorientierten Programmierung und können es beim Entwurf\neinfacher Programme anwenden. Sie besitzen Übung in der\nDarstellung von Klassen und deren Instanzen mit einfachen (an UML\nangelehnten) Diagrammen. Sie erlangen praktische Erfahrungen bei\nder Entwicklung von Programmen in der Programmiersprache Java.\nSie sind mit dem Einsatz einer integrierten Entwicklungsumgebung\nsowie dem Debuggen und Testen von Programmen vertraut.",
+      "content": "Vorlesung: Grundlagen objektorientierter Programmierung,\nKlassen und Objekte, Datentypen (primitive Typen,\nReferenztypen), Konstruktoren und Methoden, Datenkapselung,\nVererbung, Polymorphie, Programmierung mit Java, Java-Laufzeit-\nund Java- Entwicklungsumgebungen, Entwicklungszyklus (Entwurf,\nQuellcode, Class-Dateien), Packages, Dokumentation (Javadoc) und\nstrukturierte Diagrammdarstellungen, Testen und Debuggen,\nBehandlung von Ausnahmen (Exceptions).",
+      "exam": "Klausur, Dauer 90 Minuten, benotet.\nDie Note entspricht der Note für das Modul.",
+      "date": "2023-12-07T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.5,
+        "richness": 0.35,
+        "effort": 0.2,
+        "relevance": 0.55
+      },
+      "suggestions": [ 5102 , 5179, 5115 , 5103, 5205 ]
+    },
+    {
+      "num": 5100,
+      "name": "Mathematik 1",
+      "abbreviation": "MA1",
+      "image": "../../assets/images/Math.png",
+      "responsible": "descartes",
+      "lecturers": [
+        "descartes",
+        "leibniz",
+        "hilbert",
+        "euler"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "1. Semester", "Pflichtmodul"],
+        ["Medizin- und Gesundheitstechnologie (B.Sc.)", "1. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "1. Semester", "Pflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden kennen und verstehen grundlegende mathematische\nBegriffsbildungen, Konzepte und Beweismethoden. Sie können diese\nzur Lösung mathematischer Aufgabenstellungen, insbesondere zur\nLösung elementarer Gleichungen und Ungleichungen anwenden. Die\nStudierenden können für einfache anwendungsbezogene\nProblemstellungen eine mathematische Modellierung finden und mit\ndieser eine Lösung berechnen.",
+      "content": "Vorlesung: Mengen, Zahlen (ganze, rationale, reelle und komplexe\nZahlen), Abbildungen, Stellenwertsysteme, Beweismethoden\n(vollständige Induktion, Widerspruchsbeweis), algebraische Identitäten\n(arithmetische und geometrische Summen, Binomialsatz),\nLösungsmengen von Gleichungen und Ungleichungen; Folgen\n(Konvergenz, Eulersche Zahl), Potenzfunktionen, Polynomfunktionen.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet.\nDie Note entspricht der Note für das Modul.",
+      "date": "2022-10-12T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.75,
+        "richness": 0.6,
+        "effort": 0.3,
+        "relevance": 0.5
+      },
+      "suggestions": [ 5214, 5198, 5194 , 5205, 5179 ]
+    },
+    {
+      "num": 5101,
+      "name": "Mathematik 2",
+      "abbreviation": "MA2",
+      "image": "../../assets/images/Math.png",
+      "responsible": "euler",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "1. Semester", "Pflichtmodul"],
+        ["Medizin- und Gesundheitstechnologie (B.Sc.)", "1. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "1. Semester", "Pflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden vertiefen ihr Verständnis zur Modellierung\ntechnischer Zusammenhänge durch genauere Untersuchungen des\nFunktionenbegriffs. Dabei kann Stetigkeit, Differenzierbarkeit und\nIntegrierbarkeit in Anwendungen wiedererkannt werden, auf\nModellierungen angewendet werden, und es können typische\nProbleme gelöst werden. Die Studierenden können insbesondere\nAufgaben zur Bestimmung von Extremwerten, Flächen oder Volumen\nlösen.",
+      "content": "Vorlesung: Funktionsgraphen, Umkehrfunktionen, Grenzwerte für\nFunktionen, Stetigkeit, Exponential- und Logarithmus-Funktionen,\ntrigonometrische Funktionen; Differentialrechnung (Differentialquotient,\nAbleitungsregeln), Anwendungen (lineare Näherung, Regel nach\nl'Hospital, Extremwertaufgaben); Integralrechnung (Riemann-Integral,\nFundamentalsatz der Differential- und Integralrechnung.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet.\nDie Note entspricht der Note für das Modul.",
+      "date": "2022-10-12T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.55,
+        "richness": 0.3,
+        "effort": 0.8,
+        "relevance": 0.6
+      },
+      "suggestions": [ 5214 , 5200 , 5198 , 5102 , 5179 ]
+    },
+    {
+      "num": 5102,
+      "name": "Mathematik 3",
+      "abbreviation": "MA3",
+      "image": "../../assets/images/Math.png",
+      "responsible": "euler",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "2. Semester", "Pflichtmodul"],
+        ["Medizin- und Gesundheitstechnologie (B.Sc.)", "2. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "2. Semester", "Pflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden kennen die praktische Relevanz linearer Probleme in Anwendungen. Sie können technische Probleme durch lineare Gleichungssysteme modellieren und diese Gleichungssysteme mitverschiedenen Verfahren lösen. Sie kennen die Zusammenhänge zwischen abstrakten linearen Abbildungen, Matrizen als deren Datenstruktur zum Rechnen und der Interpretation in Anwendungen und der Geometrie. Sie sind in der Lage Strukturaussagen für lineare Abbildungen zu treffen und kennen die Interpretation der Strukturaussagen in Anwendungen.",
+      "content": "Vorlesung: Lineare Gleichungssysteme (Lösungsmengen, Gauß‘sches Eliminationsverfahren), Vektorräume, lineare Unabhängigkeit, Basis, Skalarprodukt, lineare Abbildungen, Matrizen (Koeffizientenmatrizen linearer Gleichungssysteme, Matrizenoperationen, Inverse, Determinanten, Entwicklungssatz); Eigenwerte und -vektoren, Diagonalisierbarkeit, Jordan’sche Normalform Übung: In den Übungen werden mit entsprechenden Aufgaben die Vorlesungsinhalte vertieft. Ein Teil.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet.Die Note entspricht der Note für das Modul.",
+      "date": "15.07.2019T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.75,
+        "richness": 0.4,
+        "effort": 0.6,
+        "relevance": 0.9
+      },
+      "suggestions": [ 5198, 5205, 5181, 5174, 5155 ]
+    },
+    {
+      "num": 5103,
+      "name": "Mathematik 4",
+      "abbreviation": "MA4",
+      "image": "../../assets/images/Math.png",
+      "responsible": "descartes",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "2. Semester", "Pflichtmodul"],
+        ["Medizin- und Gesundheitstechnologie (B.Sc.)", "2. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "2. Semester", "Pflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden verstehen Näherungsverfahren, können diese auf Problemstellungen anwenden und verstehen die Abschätzung der dabei gemachten Fehler. Sie können Differentialgleichungen zur Modellierung technischer Prozesse anwenden und ausgezeichnete Klassen von Differentialgleichungen lösen. Sie können periodische und nichtperiodische Funktionen in Frequenzen zerlegen. Sie besitzen die mathematischen Grundlagen für technische Anwendungen in der Regelungstechnik, Messtechnik, numerischen Simulation oder Signaloder Bildanalyse.",
+      "content": "Vorlesung: Polynominterpolationen, unendliche Reihen (Potenzreihen, Konvergenzradius, Taylor‘sche Entwicklung); Differentialgleichungen (Lösung durch Separation, homogene und inhomogene lineare Differentialgleichungen höherer Ordnung mit konstanten Koeffizienten); Fourier-Reihen und Fourier-Transformationen Übung: In den Übungen werden mit entsprechenden Aufgaben die Vorlesungs-inhalte vertieft. Ein Teil der wöchentlich ausgegebenen Übungsaufgaben wird korrigiert.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet.Die Note entspricht der Note für das Modul.",
+      "date": "15.07.2019T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.55,
+        "richness": 0.4,
+        "effort": 0.2,
+        "relevance": 0.6
+      },
+      "suggestions": [ 5132, 5100 , 5155, 5190, 5180  ]
+    },
+    {
+      "num": 5205,
+      "name": "Gender-Diversity",
+      "abbreviation": "GD",
+      "image": "../../assets/images/Test Tube.png",
+      "responsible": "hawking",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Data Science (B.Sc.)", "5/6. Semester", "Wahlpflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "5/6. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "5/6. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden stärken ihre persönliche Wahrnehmung der Kommunikationskulturen in Arbeitsorganisationen. Sie erkennen geschlechterdifferenzierende Gestaltung der Kommunikation (Gender Training) und erwerben interkulturelle Kompetenzen (Diversity Training). Lernziele sind Veränderungen im Denken und Handeln und das Erkennen und Aufbrechen kulturell gebundener Fähigkeiten und Verhaltensweisen.",
+      "content": "Übung: Kommunikation und Team Rollen, Rhetorik, Konfliktmanagement, persönlicher Ausdruck und Körpersprache, Karriere, Unternehmenskultur, interkulturelle Kompetenzen.",
+      "exam": "Präsentation oder Präsentation mit schriftlicher Zusammenfassung oder schriftlicher Bericht, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "15.07.2019T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.8,
+        "richness": 0.85,
+        "effort": 1.0,
+        "relevance": 0.6
+      },
+      "suggestions": [ 5115 , 5114, 5181, 5132, 5142 ]
+    },
+    {
+      "num": 5174,
+      "name": "Betriebswirtschaftslehre",
+      "abbreviation": "BW",
+      "image": "../../assets/images/Book.png",
+      "responsible": "newton",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Data Science (B.Sc.)", "6. Semester", "Wahlpflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "5/6. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "5/6. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden erwerben die Fachkompetenz, die Betriebswirtschaftslehre in die Gesellschaftswissenschaften einzuordnen, verschiedene Rechtsformen von Unternehmen zu unterscheiden und die Organisationsformen des Rechnungswesens zu erkennen. Dies versetzt die Studierenden in die Lage, den Wertfluss im Unternehmen zu beurteilen und darzustellen. Die Studierenden können Methoden zur Kostenkalkulation anwenden und kritisch beurteilen.",
+      "content": "Vorlesung: Unterscheidung zwischen BWL (Betriebswirtschaftslehre) und VWL (Volkswirtschaftslehre), Rechtsformen von Unternehmen, Unterschiede Personen/Kapitalgesellschaften, öffentliche Unternehmensformen. Grundzüge des externen Rechnungswesens, Inventur-Inventar-Bilanz, Verbuchung einfacher Geschäftsvorfälle, Bewertungsansätze in der Bilanz, Abschreibungsverfahren, Jahresabschluss, Gewinn-/ Verlustrechnung, Anhang zur Bilanz. Gewinnermittlungsrechnungen einzelner Rechtsformen.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "15.07.2019T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.7,
+        "richness": 0.75,
+        "effort": 1.0,
+        "relevance": 0.6
+      },
+      "suggestions": [ 5181, 5190, 5100 , 5115 , 5155 ]
+    },
+    {
+      "num": 5214,
+      "name": "Messtechnik",
+      "abbreviation": "MT",
+      "image": "../../assets/images/Graph.png",
+      "responsible": "einstein",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Data Science (B.Sc.)", "6. Semester", "Wahlpflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "3. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "5/6. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden können Messungen planen und durchführen. Sie können dabei Fehlerquellen identifizieren und eine entsprechende Fehlerabschätzung durchführen. Die Studierenden kennen unterschiedliche Messmethoden und Messgeräte für elektrische Größen.",
+      "content": "Vorlesung: Messung, Skalen, SI-System, Unsicherheit, Abweichungen, Messfehler, Verteilungen, Fehlerrechnung, Messen der Größen des SISystems, Messen von elektrischen Größen (Analog und Digital), Signalverarbeitung Praktikum: Grundlagen des Experimentierens, elektrische Messungen mit Multimeter, Oszilloskop, Signalgenerator. Fehlererkennung und Troubleshooting.",
+      "exam": "E-Klausur, Dauer 90 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "07.12.2023T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.7,
+        "richness": 0.65,
+        "effort": 0.5,
+        "relevance": 0.7
+      },
+      "suggestions": [ 5237, 5194 , 5181, 5142, 5100  ]
+    },
+    {
+      "num": 5190,
+      "name": "Rechnernetze",
+      "abbreviation": "MT",
+      "image": "../../assets/images/Programming.png",
+      "responsible": "hilbert",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Data Science (B.Sc.)", "6. Semester", "Wahlpflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "3. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "5/6. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden sind mit dem Aufbau und den Funktionen der relevanten Architekturmodelle (TCP/IP, ISO/OSI) vertraut. Sie besitzen einen qualifizierten Überblick über weit verbreitete Konzepte lokaler Netzwerke sowie den grundlegenden und generischen Protokollkonzepten, wie beispielsweise Protokoll, Dienst, SAP, PCI, PDU, SDU etc.",
+      "content": "Vorlesung: Überblick über Grundbegriffe der technischen Kommunikation, der geschichteten Protokollarchitekturen und das OSI- Referenzmodells, lokale Netze, Protokollfamilien: IEEE 802, TCP/IP, grundlegende Techniken für physikalische Schicht, Sicherungsschicht, Netzwerkschicht, einschließlich IP-Adressierung und statischem Routing, Transport- und Anwendungsschicht.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "15.07.2019T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.8,
+        "richness": 0.55,
+        "effort": 0.5,
+        "relevance": 0.6
+      },
+      "suggestions": [ 5179, 5114, 5237, 5132, 5205 ]
+    },
+    {
+      "num": 5142,
+      "name": "Sensortechnik",
+      "abbreviation": "ST",
+      "image": "../../assets/images/Programming.png",
+      "responsible": "hopper",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "4. Semester", "Wahlpflichtmodul"],
+        ["Mechatronik (B.Sc.)", "4. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "4. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden verstehen den Aufbau und die unterschiedlichen physikalischen Wirkprinzipien von Sensoren. Basierend darauf verstehen Sie die in der Sensortechnik verwendeten Funktionsprinzipien. Als Methodenkompetenz können sie die jeweiligen Funktionsprinzipien auf typische praktische Problemstellungen der Sensortechnik anwenden. Diese Kompetenz wird durch praktische Anwendung von Sensoren im Rahmen von Versuchsaufbauten im Praktikum ergänzt.",
+      "content": "Vorlesung: Prinzipieller Aufbau von Sensoren, Sensormodule, Signalverarbeitung, Schnittstellen. Methoden der Temperaturmessung. Druckmessung mit Messbrücke. MEMS – Sensoren für Neigung, Beschleunigung und Drehrate. MagnetfeldSensoren allgemein und Strom-Monitoring. Die Inhalte werden anhand von Übungsausgaben wiederholt und z.T. vertieft.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "12.10.2022T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.8,
+        "richness": 0.55,
+        "effort": 0.5,
+        "relevance": 0.6
+      },
+      "suggestions": [ 5181, 5132, 5101, 5103, 5194  ]
+    },
+    {
+      "num": 5200,
+      "name": "Signale und Systeme",
+      "abbreviation": "SY",
+      "image": "../../assets/images/Graph.png",
+      "responsible": "zuse",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "3. Semester", "Wahlpflichtmodul"],
+        ["Mechatronik (B.Sc.)", "3. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "3. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Das Grundverständnis für die abstrakte Beschreibung von Signalen und Systemen ist unabhängig von der Art eines technischen Studiengangs fundamental für das systematische und ingenieurmäßige Arbeiten an komplexen mechatronischen sowie automatisierungs- und informationstechnischen Aufgabenstellungen.",
+      "content": "Vorlesung: Charakterisierung von Signalen und Systemen; Klassifizierung von Signalen, spezielle Signale (z. B. Sinus, Dirac-Stoß, ...), Faltung, Superpositionsprinzip, Fourier-Reihe, FourierTransformation, Signalspektrum, Fensterung, Bandbreite; Klassifizierung von Systemen (linear/nichtlinear, invariant/variant, Kausalität, Stabilität), Blockschaltbilder, Differentialgleichungen und Differentialgleichungssysteme, lineare zeitinvariante Systeme.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "12.10.2022T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.4,
+        "richness": 0.5,
+        "effort": 0.3,
+        "relevance": 0.2
+      },
+      "suggestions": [ 5155, 5181, 5181, 5237, 5142 ]
+    },
+    {
+      "num": 5114,
+      "name": "Physik 1",
+      "abbreviation": "PH1",
+      "image": "../../assets/images/Test Tube.png",
+      "responsible": "leibniz",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Data Science (B.Sc.)", "5. Semester", "Wahlpflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "3. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "3. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden kennen die Methodik der Physik und des Messens von physikalischen Größen. Sie beherrschen grundlegende physikalische Größen der Mechanik. Sie können die Wechselwirkung eines physikalischen Systems mit seiner Umgebung mathematisch beschreiben und auf unbekannte Problemstellungen anwenden.",
+      "content": "Vorlesung: Das Messen physikalischer Größen und das Erstellen physikalischer Gesetze werden thematisiert. Exemplarisch werden die Themen der Mechanik anhand einer Fahrradfahrt eingeführt. Dabei werden Massenpunkte und die Mechanik starrer Körper behandelt. Die Bedeutung der Erhaltungsgrößen in der Physik wird erarbeitet.",
+      "exam": "Klausur oder E-Klausur, Dauer 90 Minuten, oder mündliche Prüfung, Dauer 30 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "12.10.2022T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.8,
+        "richness": 0.7,
+        "effort": 0.4,
+        "relevance": 0.8
+      },
+      "suggestions": [ 5198, 5115 , 5142, 5101 , 5103 ]
+    },
+    {
+      "num": 5115,
+      "name": "Physik 2",
+      "abbreviation": "PH2",
+      "image": "../../assets/images/Test Tube.png",
+      "responsible": "lovelace",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Data Science (B.Sc.)", "6. Semester", "Wahlpflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "4. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "6. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden beherrschen grundlegende physikalische Konzepte zur Thermodynamik und Optik. Ebenso zu unterschiedlichen Schwingungen und Wellen. Die erlernten physikalischen Methodenkompetenzen können auf anwendungsorientierte Problemstellungen angewendet werden.",
+      "content": "Vorlesung: Die grundlegenden Themen der Thermodynamik und der Optik werden erarbeitet. Die mathematische Beschreibung von Schwingungen und Wellen, inklusive entsprechender physikalischer Konzepte werden eingeführt. Die Physik der Wellen wird anhand optischer und akustischer Anwendungen vertieft.",
+      "exam": "Klausur oder E-Klausur, Dauer 90 Minuten, oder mündliche Prüfung, Dauer 30 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "07.12.2023T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.7,
+        "richness": 0.6,
+        "effort": 0.2,
+        "relevance": 0.6
+      },
+      "suggestions": [ 5174, 5181, 5115 , 5102, 5205 ]
+    },
+    {
+      "num": 5198,
+      "name": "Elektronik 1",
+      "abbreviation": "EL1",
+      "image": "../../assets/images/Graph.png",
+      "responsible": "neumann",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Mechatronik (B.Sc.)", "3. Semester", "Pflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "1. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "6. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden beherrschen fachlich die für die Studienrichtungen wichtigsten Eigenschaften grundlegender elektronischer Bauelemente. Sie verstehen und beherrschen methodenkompetent Grundschaltungen mit diesen Bauelementen und können deren Verhalten in den typischen Applikationen der Studienrichtungen berechnen. Sie können englischsprachige Datenblätter von Bauelementen lesen und interpretieren.",
+      "content": "Vorlesung: Bauelemente Widerstand, Kondensator, Halbleitermaterial und Dotierung, Diode (Z-Diode, Schottky-Diode). Anwendungen und Grundschaltungen mit diesen Bauelementen. Komplexe Rechnung und deren Anwendung in der Elektronik. Übung: In der Übung werden anhand von Rechenaufgaben die Vorlesungsinhalte sowie Schaltungsanalyse und Berechnung vertieft.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "07.12.2023T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.5,
+        "richness": 0.4,
+        "effort": 0.6,
+        "relevance": 0.8
+      },
+      "suggestions": [ 5181, 5174, 5180 , 5115 , 5194 ]
+    },
+    {
+      "num": 5194,
+      "name": "Elektronik 2",
+      "abbreviation": "EL2",
+      "image": "../../assets/images/Graph.png",
+      "responsible": "turing",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Mechatronik (B.Sc.)", "4. Semester", "Pflichtmodul"],
+        ["Elektrotechnik (B.Sc.)", "2. Semester", "Pflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "5. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden beherrschen fachlich die für die Studienrichtungen wichtigsten Eigenschaften grundlegender elektronischer Bauelemente. Sie verstehen und beherrschen methodenkompetent Grundschaltungen mit diesen Bauelementen und können deren Verhalten in den typischen Applikationen der Studienrichtungen berechnen. Sie können englischsprachige Datenblätter von Bauelementen lesen und interpretieren.",
+      "content": "Vorlesung: Bauelement Bipolar-Transistor, Operationsverstärker, Einführung in die Digitaltechnik und Digital-Bauelemente. Übung: In der Übung werden anhand von Rechenaufgaben die Vorlesungsinhalte sowie Schaltungsanalyse und Berechnung vertieft.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "07.12.2023T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.5,
+        "richness": 0.8,
+        "effort": 0.6,
+        "relevance": 0.3
+      },
+      "suggestions": [ 5180 , 5100, 5205, 5115 , 5179 ]
+    },
+    {
+      "num": 5237,
+      "name": "Entrepreneurship",
+      "abbreviation": "EP",
+      "image": "../../assets/images/Book.png",
+      "responsible": "euler",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Mechatronik (B.Sc.)", "4. Semester", "Pflichtmodul"],
+        ["Data Science (B.Sc.)", "5. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "5. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden erwerben die Fähigkeiten, innovative Geschäftsideen zu entwickeln, zu evaluieren und zu validieren. Sie erfahren, wie sich Kundenwünsche ermitteln lassen und erkennen die Bedeutung disruptiver Innovationen. Sie lernen ein Start-Up gemäß des LeanPrinzips zu führen und erlangen Kenntnis über rechtliche und theoretische Rahmenbedingungen von Start-Ups in Deutschland.",
+      "content": "Value Proposition Canvas, Business Model Canvas, Der Lean-Start-Up-Prozess, Disruption als “Game Changer”, Das deutsche Start-Up-Ökosystem, Ideen überzeugend präsentieren",
+      "exam": "Präsentation mit schriftlicher Zusammenfassung, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "07.12.2023T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.3,
+        "richness": 0.8,
+        "effort": 0.9,
+        "relevance": 0.4
+      },
+      "suggestions": [ 5155, 5100, 5190, 5142, 5200  ]
+    },
+    {
+      "num": 5155,
+      "name": "Funksysteme",
+      "abbreviation": "FS",
+      "image": "../../assets/images/Graph.png",
+      "responsible": "euler",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "5. Semester", "Wahlpflichtmodul"],
+        ["Data Science (B.Sc.)", "5. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "5. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden kennen die Komponenten eines Funksystems und deren Eigenschaften. Außerdem sind sie vertraut mit charakteristischen Kenn- und Einflussgrößen. Sie können diese Fachkompetenz als Methodenkompetenz auf typische praktische Probleme anwenden.",
+      "content": "Vorlesung: Antennen (Kenngrößen, Bauformen), Funkkanal (ideal, real), Rauschen (Empfindlichkeit), digitale Modulationsverfahren (Bandbreite, Bitfehlerrate), Multiplexverfahren, Kanalvergabe, Koexistenz, elektromagnetische Umweltverträglichkeit (EMVU), normgerechte Messungen, Markteinführung.",
+      "exam": "Klausur, Dauer 90 Minuten, oder mündliche Prüfung, Dauer 30 Minuten, benotet. Seminararbeit. Die Note entspricht der Note für das Modul.",
+      "date": "07.12.2023T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.5,
+        "richness": 0.3,
+        "effort": 0.4,
+        "relevance": 0.4
+      },
+      "suggestions": [ 5205, 5101, 5155, 5142, 5181  ]
+    },
+    {
+      "num": 5132,
+      "name": "Hardware-Design 1",
+      "abbreviation": "HD 1",
+      "image": "../../assets/images/Programming.png",
+      "responsible": "euler",
+      "lecturers": [
+        "euler",
+        "descartes",
+        "leibniz",
+        "hilbert"
+      ],
+      "language": "de_DE",
+      "usage": [
+        ["Elektrotechnik (B.Sc.)", "4. Semester", "Wahlpflichtmodul"],
+        ["Data Science (B.Sc.)", "4. Semester", "Wahlpflichtmodul"],
+        ["Technische Informatik (B.Sc.)", "6. Semester", "Wahlpflichtmodul"]
+      ],
+      "time": [
+        60,
+        90
+      ],
+      "credits": 5,
+      "goals": "Die Studierenden des Bachelorstudiengangs Elektrotechnik beherrschen für die Studienrichtungen typische komplexere Schaltungsstrukturen. Sie erreichen die Befähigung, diese Schaltungen methodenkompetent zu analysieren, aus der Analyse Regeln für die Dimensionierung der Bauelemente abzuleiten und die Bauelemente zu dimensionieren.",
+      "content": "Vorlesung: MOSFET, IGBT, Induktive Bauelemente, Schaltungen aus dem Bereichen Filtertechnik, Stromversorgung (linear und geschaltet), Stromquellen, Kippschaltungen, Schaltungen mit Dioden oder andere werden gemäß der Lernziele behandelt. Auf Möglichkeiten und Grenzen der Simulation elektronischer Schaltungen wird eingegangen.",
+      "exam": "Klausur, Dauer 90 Minuten, benotet. Die Note entspricht der Note für das Modul.",
+      "date": "07.12.2023T00:00:00.000Z",
+      "rating": {
+        "clarity": 0.8,
+        "richness": 0.7,
+        "effort": 0.7,
+        "relevance": 0.4
+      },
+      "suggestions": [ 5142, 5181, 5101, 5214 , 5194 ]
+    }
+  ]
+}

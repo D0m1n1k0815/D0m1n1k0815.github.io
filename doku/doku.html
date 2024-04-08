@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>doku.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="rank-it---dein-professoren-punktierungs-portal">Rank it - Dein Professoren-Punktierungs-Portal</h1>
+<p><em>Ein Software-Design-Projekt von Dominik Sander und Tim Ernst</em></p>
+<h2 id="einf%C3%BChrung">Einführung</h2>
+<p>Das Studienbewertungsportal ermöglicht den Studierenden die Bewertung ihrer Dozenten und Module.
+Dies erleichtert Studieninteressierten die Auswahl eines passenden Studienverlaufs
+und dient den Dozenten als Ansporn, das Beste aus sich herauszubekommen.</p>
+<h2 id="systemdesign">Systemdesign</h2>
+<h3 id="funktions%C3%BCbersicht">Funktionsübersicht</h3>
+<p>Das Studienbewertungsportal als Ganzes zerfällt in mehrere Teile.
+Jede Seite verfügt über einen Header, der die Navigation durch die verschiedenen Teile der Website erleichtert,
+sowie einen Footer, der Kontaktinformationen des Betreibers und eine rechtliche Anmerkung enthält.</p>
+<p>Es gibt eine Hauptseite, die eine Suchfunktion bereitstellt sowie eine Liste der jeweils 5 beliebtesten Dozenten und Module.
+Darüber hinaus gibt es jeweils eine Seite, auf der alle Dozenten und Module aufgelistet sind, die nach verschiedenen Kriterien sortiert werden können.
+Die Detailseite eines Dozenten zeigt Informationen über diesen an, wie etwa Name, Titel, Werdegang und Bewertungen.
+Abgerundet wird die Seite durch die Möglichkeit, auf Basis von Vorschlägen zu ähnlichen Dozenten zu gelangen.
+Die Detailseite eines Moduls zeigt Informationen über dieses an, wie etwa Name, den Verantwortlichen und Bewertungen.
+Auch diese Seite wird über Vorschläge zu ähnlichen Modulen abgerundet.</p>
+<h3 id="integration-von-angular">Integration von Angular</h3>
+<p>Wir haben Angular und TypeScript verwendet, um die Benutzeroberfläche zu gestalten.
+Wir verwenden Firebase, eine NoSQL-Datenbank von Google, die auf JSON basiert.
+Die einzelnen Seiten sind in Angular-Komponenten unterteilt, die jeweils eine HTML-Datei, eine CSS-Datei und eine TypeScript-Datei enthalten.
+Zur Kommunikation zwischen Angular und Firebase verwenden wir einen HTTP-Service.
+Um die Suchfunktion zu ermöglichen, nutzen wir eine Search-Bar mit Angular-Directives.
+Darüber hinaus stellt die Suchleiste ein Formular dar, um eine gute Benutzerführung zu ermöglichen.
+Wir nutzen Routing, um einzelne Components situativ sinnvoll zu laden und zu entladen.</p>
+<h3 id="datenbankentwurf">Datenbankentwurf</h3>
+<h4 id="klassen%C3%BCbersicht">Klassenübersicht</h4>
+<pre><code class="language-mermaid"><div class="mermaid">classDiagram
+    LecturerRating "1" *-- "1" Lecturer
+    ModuleRating "1" *-- "1" Module
+    TimelineEntry "n" *-- "1" Lecturer
+    Lecturer "n" *-- "1" Lecturers
+    Module "n" *-- "1" Modules
+    class LecturerRating{
+      punctuality : unit
+      commitment : unit
+      clarity : unit
+      kindness : unit
+    }
+    class ModuleRating{
+      clarity : unit
+      richness : unit
+      effort : unit
+      relevance : unit
+    }
+    class TimelineEntry{
+      year : i32
+      text : string
+    }
+    class Lecturer{
+      name : string
+      title : string
+      image : string
+      timeline : TimelineEntry[n]
+      rating : LecturerRating
+    }
+    class Module{
+      name : string
+      image : string
+      abbreviation : string
+      responsible : string
+      lecturers : string[n]
+      language : string
+      usage : string[n]
+      teaching_forms : u8[3]
+      time : u16[2]
+      credits : u8
+      goals : string
+      content : string
+      exam : string
+      date : string
+      rating : ModuleRating
+    }
+    class Lecturers{
+      is Dictionary[string, Lecturer]
+    }
+    class Modules{
+      is Dictionary[string, Module]
+    }
+</div></code></pre>
+<h1 id="datenbanken">Datenbanken</h1>
+<p>Genutzt wird eine NoSQL-Datenbank, die auf JSON basiert.</p>
+<h2 id="in-der-dokumentation-verwendete-datentypen">In der Dokumentation verwendete Datentypen</h2>
+<table>
+<thead>
+<tr>
+<th>Doku-Datentyp</th>
+<th>JSON-Datentyp</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bool</code></td>
+<td><code>boolean</code></td>
+<td>Wahrheitswert</td>
+</tr>
+<tr>
+<td><code>char</code></td>
+<td><code>string</code></td>
+<td>Unicode-Zeichen</td>
+</tr>
+<tr>
+<td><code>uN</code></td>
+<td><code>number</code></td>
+<td>N-Bit vorzeichenloser Integer</td>
+</tr>
+<tr>
+<td><code>iN</code></td>
+<td><code>number</code></td>
+<td>N-Bit vorzeichenbehafteter Integer</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td><code>number</code></td>
+<td>Reelle Zahl im Wertebereich von 0.0 bis 1.0 (normiert) <br /> Name von Eigenschaft, Einheitsintervall zu sein</td>
+</tr>
+<tr>
+<td><code>string</code></td>
+<td><code>string</code></td>
+<td>UTF-8-kodierte Zeichenkette</td>
+</tr>
+<tr>
+<td><code>d[n]</code></td>
+<td><code>array</code></td>
+<td>Array von n Elementen des Datentyps <code>d</code></td>
+</tr>
+<tr>
+<td><code>object</code></td>
+<td><code>object</code></td>
+<td>Assoziatives Feld</td>
+</tr>
+</tbody>
+</table>
+<h2 id="in-der-dokumentation-verwendete-bemerkungen">In der Dokumentation verwendete Bemerkungen</h2>
+<ul>
+<li>F: kennzeichnet ein Format</li>
+<li>UTC-Stempel ist ein Zeitstempel im Format <code>YYYY-MM-DDTHH:MM:SSZ</code></li>
+</ul>
+<h2 id="daten">Daten</h2>
+<h3 id="lecturerrating-object---req-8000">LecturerRating: <code>object</code> - REQ 8000</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Datentyp</th>
+<th>Beschreibung</th>
+<th style="text-align:right">REQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>punctuality</td>
+<td><code>unit</code></td>
+<td>Pünktlichkeit</td>
+<td style="text-align:right">8010</td>
+</tr>
+<tr>
+<td>commitment</td>
+<td><code>unit</code></td>
+<td>Engagement</td>
+<td style="text-align:right">8020</td>
+</tr>
+<tr>
+<td>clarity</td>
+<td><code>unit</code></td>
+<td>Verständlichkeit</td>
+<td style="text-align:right">8030</td>
+</tr>
+<tr>
+<td>kindness</td>
+<td><code>unit</code></td>
+<td>Freundlichkeit</td>
+<td style="text-align:right">8040</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modulerating-object---req-9000">ModuleRating: <code>object</code> - REQ 9000</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Datentyp</th>
+<th>Beschreibung</th>
+<th style="text-align:right">REQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>clarity</td>
+<td><code>unit</code></td>
+<td>Verständlichkeit</td>
+<td style="text-align:right">9010</td>
+</tr>
+<tr>
+<td>richness</td>
+<td><code>unit</code></td>
+<td>Reichhaltigkeit des Lehrmaterials</td>
+<td style="text-align:right">9020</td>
+</tr>
+<tr>
+<td>effort</td>
+<td><code>unit</code></td>
+<td>Lernaufwand</td>
+<td style="text-align:right">9030</td>
+</tr>
+<tr>
+<td>relevance</td>
+<td><code>unit</code></td>
+<td>Relevanz</td>
+<td style="text-align:right">9040</td>
+</tr>
+</tbody>
+</table>
+<h3 id="timelineentry-object---req-6040">TimelineEntry: <code>object</code> - REQ 6040</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Datentyp</th>
+<th>Beschreibung</th>
+<th style="text-align:right">REQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>year</td>
+<td><code>i32</code></td>
+<td>Jahr</td>
+<td style="text-align:right">6040</td>
+</tr>
+<tr>
+<td>text</td>
+<td><code>string</code></td>
+<td>Text</td>
+<td style="text-align:right">6040</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lecturer-object---req-6000">Lecturer: <code>object</code> - REQ 6000</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Datentyp</th>
+<th>Bemerkungen</th>
+<th>Beschreibung</th>
+<th style="text-align:right">REQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>user</td>
+<td><code>string</code></td>
+<td></td>
+<td>ILIAS-Benutzername</td>
+<td style="text-align:right">6000</td>
+</tr>
+<tr>
+<td>name</td>
+<td><code>string</code></td>
+<td></td>
+<td>Name(n)</td>
+<td style="text-align:right">6020</td>
+</tr>
+<tr>
+<td>title</td>
+<td><code>string</code></td>
+<td></td>
+<td>Titel</td>
+<td style="text-align:right">6030</td>
+</tr>
+<tr>
+<td>image</td>
+<td><code>string</code></td>
+<td>URL</td>
+<td>Bild</td>
+<td style="text-align:right">6010</td>
+</tr>
+<tr>
+<td>modules</td>
+<td><code>num[n]</code></td>
+<td></td>
+<td>Dozierte Module</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>timeline</td>
+<td><code>TimelineEntry[n]</code></td>
+<td></td>
+<td>Werdegang</td>
+<td style="text-align:right">6040</td>
+</tr>
+<tr>
+<td>rating</td>
+<td><code>LecturerRating</code></td>
+<td></td>
+<td>Bewertung</td>
+<td style="text-align:right">6800</td>
+</tr>
+<tr>
+<td>suggestions</td>
+<td><code>string[n]</code></td>
+<td></td>
+<td>Vorschläge als Array von Prof-IDs</td>
+<td style="text-align:right">6900</td>
+</tr>
+</tbody>
+</table>
+<h3 id="module-object---req-7000">Module: <code>object</code> - REQ 7000</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Datentyp</th>
+<th>Bemerkungen</th>
+<th>Beschreibung</th>
+<th style="text-align:right">REQ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>num</td>
+<td><code>u32</code></td>
+<td></td>
+<td>Modulnummer</td>
+<td style="text-align:right">7002</td>
+</tr>
+<tr>
+<td>name</td>
+<td><code>string</code></td>
+<td></td>
+<td>Bezeichnung des Moduls</td>
+<td style="text-align:right">7020</td>
+</tr>
+<tr>
+<td>image</td>
+<td><code>string</code></td>
+<td>URL</td>
+<td>Bild</td>
+<td style="text-align:right">7010</td>
+</tr>
+<tr>
+<td>abbreviation</td>
+<td><code>string</code></td>
+<td></td>
+<td>Kurzzeichen des Moduls</td>
+<td style="text-align:right">7004</td>
+</tr>
+<tr>
+<td>responsible</td>
+<td><code>string</code></td>
+<td></td>
+<td>Modulverantwortlicher</td>
+<td style="text-align:right">7030</td>
+</tr>
+<tr>
+<td>lecturers</td>
+<td><code>ID(Lecturer)[n]</code></td>
+<td></td>
+<td>Dozenten</td>
+<td style="text-align:right">7040</td>
+</tr>
+<tr>
+<td>language</td>
+<td><code>string</code></td>
+<td>F: xx_YY</td>
+<td>Sprachcode: (ISO 639)_(ISO 3166)</td>
+<td style="text-align:right">7050</td>
+</tr>
+<tr>
+<td>usage</td>
+<td><code>string[3][n]</code></td>
+<td></td>
+<td>Verwendung des Moduls in Studiengängen</td>
+<td style="text-align:right">7060</td>
+</tr>
+<tr>
+<td>time</td>
+<td><code>u16[2]</code></td>
+<td>in Stunden</td>
+<td>(Kontaktzeit, Eigenstudienzeit)</td>
+<td style="text-align:right">7080</td>
+</tr>
+<tr>
+<td>credits</td>
+<td><code>u8</code></td>
+<td></td>
+<td>Credits für den Kurs</td>
+<td style="text-align:right">7090</td>
+</tr>
+<tr>
+<td>goals</td>
+<td><code>string</code></td>
+<td></td>
+<td>Lernziele und Kompetenzen</td>
+<td style="text-align:right">7110</td>
+</tr>
+<tr>
+<td>content</td>
+<td><code>string</code></td>
+<td></td>
+<td>Inhalt des Kurses</td>
+<td style="text-align:right">7120</td>
+</tr>
+<tr>
+<td>exam</td>
+<td><code>string</code></td>
+<td></td>
+<td>Prüfungsmodalitäten</td>
+<td style="text-align:right">7130</td>
+</tr>
+<tr>
+<td>date</td>
+<td><code>string</code></td>
+<td>UTC-Stempel</td>
+<td>Letzte Aktualisierung</td>
+<td style="text-align:right">7140</td>
+</tr>
+<tr>
+<td>rating</td>
+<td><code>ModuleRating</code></td>
+<td></td>
+<td>Bewertung</td>
+<td style="text-align:right">7800</td>
+</tr>
+<tr>
+<td>suggestions</td>
+<td><code>u32[n]</code></td>
+<td></td>
+<td>Vorschläge als Array von Kurs-IDs</td>
+<td style="text-align:right">7900</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lecturers-array---req-1000">Lecturers: <code>array</code> - REQ 1000</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Datentyp</th>
+<th>Bemerkungen</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>this</td>
+<td><code>Lecturer[n]</code></td>
+<td></td>
+<td>Liste von Dozenten</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modules-array---req-2000">Modules: <code>array</code> - REQ 2000</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Datentyp</th>
+<th>Bemerkungen</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>this</td>
+<td><code>Module[n]</code></td>
+<td></td>
+<td>Liste von Modulen</td>
+</tr>
+</tbody>
+</table>
+<h2 id="anhang">Anhang</h2>
+<h3 id="entwurfsskizzen">Entwurfsskizzen</h3>
+<p>Die folgenden Skizzen stammen aus der Entwurfsphase des Projekts.
+<img src="titel_skizze.png" alt="Kurs-Skizze">
+<img src="kurs_skizze.png" alt="Kurs-Skizze">
+<img src="professor_skizze.png" alt="Kurs-Skizze">
+<img src="charts_skizze.png" alt="Kurs-Skizze"></p>
+<h3 id="requirements">Requirements</h3>
+<h1 id="requirements">Requirements</h1>
+<p>FT steht für Funktionalität, DEF für Definition.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">REQ ID</th>
+<th>Requirement/Text</th>
+<th>Object</th>
+<th style="text-align:right">Priority</th>
+<th>Implementation</th>
+<th>Fragen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">0</td>
+<td>Definitionen/Glossar</td>
+<td>FT</td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">10</td>
+<td>Professor: Professoren &amp; Dozenten</td>
+<td>DEF</td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">20</td>
+<td>Kurse: Alte &amp; neue Module</td>
+<td>DEF</td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">30</td>
+<td>Bewertung: Durchschnitt aller Bewertungen</td>
+<td>DEF</td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">1000</td>
+<td><strong>Prof-Charts</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">1010</td>
+<td>Top-5 Professoren in einer Liste darstellen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">1015</td>
+<td>Prof-Rang</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">1020</td>
+<td>Prof-Bild</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">1040</td>
+<td>Prof-Name</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">1050</td>
+<td>Prof-Gesamtbewertung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">1060</td>
+<td>Mehr anzeigen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">2000</td>
+<td><strong>Kurs-Charts</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">2010</td>
+<td>Top-5 Kurse in einer Liste darstellen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">2015</td>
+<td>Kurs-Rang</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">2020</td>
+<td>Kurs-Bild</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">2040</td>
+<td>Kurs-Name</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">2050</td>
+<td>Kurs-Gesamtbewertung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">2060</td>
+<td>Mehr anzeigen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3000</td>
+<td><strong>Prof-Filtern</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3010</td>
+<td>Professoren in einer Liste darstellen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3020</td>
+<td>Professoren nach Fachbereich filtern</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3030</td>
+<td>Professoren nach Studiengang filtern</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3200</td>
+<td>Sortieren nach beste Bewertung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3210</td>
+<td>Sortieren nach schlechtester Bewertung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3220</td>
+<td>Sortieren nach Alphabet aufsteigend</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3230</td>
+<td>Sortieren nach Alphabet absteigend</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3240</td>
+<td>Sortieren nach meiste Kurse</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3250</td>
+<td>Sortieren nach wenigste Kurse</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3400</td>
+<td>Professorenattribute</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3405</td>
+<td>Rang</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3410</td>
+<td>Bild</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3420</td>
+<td>Name</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">3430</td>
+<td>Bewertung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4000</td>
+<td><strong>Kurs-Filtern</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4010</td>
+<td>Kurse in einer Liste darstellen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4020</td>
+<td>Kurse nach Fachbereich filtern</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4030</td>
+<td>Kurse nach Studiengang filtern</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4200</td>
+<td>Sortieren nach beste Bewertung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4210</td>
+<td>Sortieren nach schlechtester Bewertung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4220</td>
+<td>Sortieren nach Alphabet aufsteigend</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4230</td>
+<td>Sortieren nach Alphabet absteigend</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4400</td>
+<td>Kursattribute</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4405</td>
+<td>Rang</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4410</td>
+<td>Bild</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4420</td>
+<td>Name</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">4430</td>
+<td>Bewertung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">5000</td>
+<td><strong>Suchfunktion</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">5010</td>
+<td>Filtern nach Fachbereich</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">5020</td>
+<td>Suche nach Professor/Kurs</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">5030</td>
+<td>Dropdownliste erscheint nach Teileingabe</td>
+<td></td>
+<td style="text-align:right">2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">5040</td>
+<td>Suchergebnisse in einer Liste darstellen</td>
+<td></td>
+<td style="text-align:right">3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6000</td>
+<td><strong>Profilansicht des Professors</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6010</td>
+<td>Bild</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6020</td>
+<td>Name</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6030</td>
+<td>Titel</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6040</td>
+<td>Timeline basierend auf String-Sprechblasen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6050</td>
+<td>Dozierte Module</td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6800</td>
+<td>Bewertungen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6810</td>
+<td>Bewertungsbutton</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">6900</td>
+<td>Vorschläge basierend auf Suchen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7000</td>
+<td><strong>Profilansicht des Kurses</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7002</td>
+<td>Führende Nummer</td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7004</td>
+<td>Kurzzeichen</td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7010</td>
+<td>Bild</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7020</td>
+<td>Name</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7030</td>
+<td>Verantwortlicher</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7040</td>
+<td>Dozenten</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7050</td>
+<td>Sprache</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7060</td>
+<td>Verwendung des Moduls in Studiengängen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7070</td>
+<td>Lehrformen</td>
+<td>DELETED</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7080</td>
+<td>Zeit</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7090</td>
+<td>Credits</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7110</td>
+<td>Lernziele und Kompetenzen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7120</td>
+<td>Inhalt des Kurses</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7130</td>
+<td>Prüfungsmodalitäten</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7140</td>
+<td>Letzte Aktualisierung</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7800</td>
+<td>Bewertungen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7810</td>
+<td>Bewertungsbutton</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">7900</td>
+<td>Vorschläge basierend auf Suchen</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">8000</td>
+<td><strong>Professor-Bewertungsfunktion</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">8010</td>
+<td>Pünktlichkeit</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">8020</td>
+<td>Engagement</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">8030</td>
+<td>Verständlichkeit</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">8040</td>
+<td>Freundlichkeit</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">8900</td>
+<td>Möglichkeit, Gewichtung anzupassen</td>
+<td></td>
+<td style="text-align:right">3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">9000</td>
+<td><strong>Kurs-Bewertungsfunktion</strong></td>
+<td>FT</td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">9010</td>
+<td>Inhaltliche Verständlichkeit</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">9020</td>
+<td>Reichhaltigkeit an Lehrmaterialien</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">9030</td>
+<td>Lernaufwand</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">9040</td>
+<td>Relevanz</td>
+<td></td>
+<td style="text-align:right">1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right">9900</td>
+<td>Möglichkeit, Gewichtung anzupassen</td>
+<td></td>
+<td style="text-align:right">3</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+<td style="text-align:right"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
