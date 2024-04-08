@@ -1,0 +1,169 @@
+.slide .group-7 {
+    height: 75px;
+    top: 868px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-8 {
+    height: 75px;
+    top: 943px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-9 {
+    height: 75px;
+    top: 1018px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-10 {
+    height: 75px;
+    top: 1093px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-11 {
+    height: 75px;
+    top: 1168px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-12 {
+    height: 75px;
+    top: 1243px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-13 {
+    height: 75px;
+    top: 1318px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-14 {
+    height: 75px;
+    top: 1393px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-15 {
+    height: 75px;
+    top: 1468px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-16 {
+    height: 75px;
+    top: 1543px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .group-17 {
+    height: 75px;
+    top: 1618px;
+    position: absolute;
+    width: 1628px;
+    left: 4px;
+  }
+  
+  .slide .footer {
+    position: relative;
+    width: 1900px;
+    height: 300px;
+    margin-right: -4px;
+  }
+  
+  .slide .overlap-5 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+  }
+  
+  .slide .text-wrapper-24 {
+    position: absolute;
+    width: 165px;
+    top: 48px;
+    left: 147px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: normal;
+  }
+  
+  .slide .footer-2 {
+    display: flex;
+    width: 623px;
+    align-items: flex-start;
+    gap: 70px;
+    position: absolute;
+    top: 59px;
+    left: 1209px;
+  }
+  
+  .slide .rectangle-3 {
+    position: absolute;
+    width: 1620px;
+    height: 1px;
+    top: 150px;
+    left: 150px;
+    background-color: #d9d9d9;
+  }
+  
+  .slide .social {
+    position: absolute;
+    width: 420px;
+    height: 60px;
+    top: 191px;
+    left: 1350px;
+  }
+  
+  .slide .frame-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 60px;
+    position: relative;
+  }
+  
+  .slide .img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .slide .p {
+    position: absolute;
+    top: 216px;
+    left: 150px;
+    opacity: 0.6;
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+ 
