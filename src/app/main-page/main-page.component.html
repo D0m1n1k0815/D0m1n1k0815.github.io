@@ -1,0 +1,262 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TypingEffect</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+  <body>
+    <div class="background">
+      <div class="filter">
+    <section>
+
+      <div class="box1">
+        <div class="group">
+          <div class="text-wrapper">RANKIT</div>
+          <div class="navbar">
+            <div class="div"><a onclick="scrolltoCharts()">Charts</a></div>
+            <div class="div"><a href="./Prof-Filtern">Prof filtern</a></div>
+            <div class="div"><a href="./Kurs-Filtern">Kurs filtern</a></div>
+            <div class="div"><a href="https://www.th-owl.de/" target="_blank">TH OWL</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Main_Page_Block_Shadow">
+    <div class="Typing_Text_container">
+      <p>finde den richtigen<br /><span #typed class="typed-text"></span><span #cursor class="cursor"></span><a>,</a><br />für dich</p>
+
+      <div class="bar" style="height: 50px; width: 560px; border-radius: 10px 10px 10px 10px;">
+        <table width="100%" height="100%">
+          <th width="12.5%"><button id="alle" onclick="alle()" style="cursor: pointer; background-color: #1565C0;">alle</button></th>
+          <th width="12.5%"><button id="fb1" onclick="fb1()" style="cursor: pointer;">fb1</button></th>
+          <th width="12.5%"><button id="fb2" onclick="fb2()" style="cursor: pointer;">fb2</button></th>
+          <th width="12.5%"><button id="fb3" onclick="fb3()" style="cursor: pointer;">fb3</button></th>
+          <th width="12.5%"><button id="fb4" onclick="fb4()" style="cursor: pointer;">fb4</button></th>
+          <th width="12.5%"><button id="fb5" onclick="fb5()" style="cursor: pointer;">fb5</button></th>
+          <th width="12.5%"><button id="fb6" onclick="fb6()" style="cursor: pointer;">fb6</button></th>
+          <th width="12.5%"><button id="fb7" onclick="fb7()" style="cursor: pointer;">fb7</button></th>
+        </table>
+      </div>
+            <div class="bar" style="margin-top: -23vh;">
+              <input type="text" [(ngModel)]="searchQuery">
+              <div class="s"><button type="submit" (click)="onSearch()">🔍</button></div>
+            </div>
+
+            <a class="Explore_Charts" onclick="scrolltoCharts()" style="cursor: pointer;">Explore Charts ˅</a>
+    </div>
+  </div>
+    </section>
+    <!-- Charts -->
+    <div class="Main_Page_Shadow"></div>
+    <section style="background-color:#17202A;" id="Charts">
+      <div class="Charts">
+          <div class="Chart_Table Prof" style="margin-right: 100px;">
+            <table width="100%" height="100%">
+              <tbody>
+              <tr>
+              <td height="13%" style="font-size: 40px; font-weight: 400;">Professoren</td>
+              </tr>
+              <tr>
+              <td height="18%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px;">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#1</td>
+                <td width="12%">                              <span class="Prof1_Picture"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Stephen"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onLecturerName(prof_users[0])">{{prof_names[0]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Prof1_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr>
+              <td height="14%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px;">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#2</td>
+                <td width="12%">                              <span class="Prof2_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onLecturerName(prof_users[1])">{{prof_names[1]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Prof2_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr>
+              <td height="14%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px;">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#3</td>
+                <td width="12%">                              <span class="Prof3_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onLecturerName(prof_users[2])">{{prof_names[2]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Prof3_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr>
+              <td  height="14%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px;">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#4</td>
+                <td width="12%">                              <span class="Prof4_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onLecturerName(prof_users[3])">{{prof_names[3]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Prof4_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr>
+              <td height="14%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px; ">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#5</td>
+                <td width="12%">                              <span class="Prof5_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onLecturerName(prof_users[4])">{{prof_names[4]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Prof5_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr style="border:0px;">
+              <td style="cursor: pointer;"><a href="../Prof-Filtern">mehr anzeigen</a></td>
+              </tr>
+              </tbody>
+              </table>
+          </div>
+          <div class="Chart_Table Kurs" style="margin-left: 100px;">
+            <table width="100%" height="100%">
+              <tbody>
+              <tr>
+              <td height="13%" style="font-size: 40px; font-weight: 400;">Kurse</td>
+              </tr>
+              <tr>
+              <td height="18%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px;">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#1</td>
+                <td width="12%">                              <span class="Kurs1_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onModuleName(kurs_nums[0])">{{kurs_names[0]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Kurs1_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr>
+              <td height="14%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px;">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#2</td>
+                <td width="12%">                              <span class="Kurs2_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onModuleName(kurs_nums[1])">{{kurs_names[1]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Kurs2_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr>
+              <td height="14%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px;">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#3</td>
+                <td width="12%">                              <span class="Kurs3_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onModuleName(kurs_nums[2])">{{kurs_names[2]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Kurs3_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr>
+              <td  height="14%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px;">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#4</td>
+                <td width="12%">                              <span class="Kurs4_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onModuleName(kurs_nums[3])">{{kurs_names[3]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Kurs4_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr>
+              <td height="14%">
+              <table width="100%">
+              <tbody>
+              <tr style="border:0px; ">
+                <td width="7.2%" style="text-align: right; font-size: 28px; color: #808080;">#5</td>
+                <td width="12%">                              <span class="Kurs5_Picture"></span>  </td>
+                <td style="text-align: left;">                <button (click)="onModuleName(kurs_nums[4])">{{kurs_names[4]}}</button>  </td>
+                <td width="15%" style="text-align: right;">   <span><img class="Kurs5_Rating" src="../../assets/images/stars.png"></span>  </td>
+                <td width="2%"></td>
+              </tr>
+              </tbody>
+              </table>
+              </td>
+              </tr>
+              <tr style="border:0px;">
+              <td style="cursor: pointer;"><a href="../Kurs-Filtern">mehr anzeigen</a></td>
+              </tr>
+              </tbody>
+              </table>
+          </div>
+        </div>
+    </section>
+
+    <div class="box">
+      <footer class="footer">
+        <div class="overlap">
+          <div class="text-wrapper">RANKIT</div>
+          <div class="navbar">
+            <div class="div" onclick="scrolltoCharts()">Charts</div>
+            <div class="div"><a href="../Prof-Filtern">Prof filtern</a></div>
+            <div class="div"><a href="../Kurs-Filtern">Kurs filtern</a></div>
+            <div class="div"><a href="https://www.th-owl.de/" target="_blank">TH OWL</a></div>
+          </div>
+          <div class="rectangle"></div>
+          <div class="social">
+            <div class="frame">
+              <a href="https://de.linkedin.com/school/technische-hochschule-ostwestfalen-lippe/" target="_blank"><img class="img-4" src="../../assets/images/linkedin.png" /></a>
+                  <a href="https://www.facebook.com/THOWL/?locale=de_DE" target="_blank"><img class="img-4" src="../../assets/images/Facebook.png" /></a>
+                  <a href="https://www.instagram.com/technische_hochschule_owl/" target="_blank"><img class="img-4" src="../../assets/images/Instagram.png" /></a>
+                  <a href="https://www.youtube.com/technischehochschuleowl" target="_blank"><img class="img-4" src="../../assets/images/Youtube.png" /></a>
+            </div>
+          </div>
+          <p class="p">© 2024 rankit Media. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </div>
+</div>
+  </body>
+</html>

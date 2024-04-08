@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="slide">
+      <div class="div">
+        <div class="text-wrapper">RANKIT</div>
+        <div class="navbar">
+          <div class="text-wrapper-2"><a href=".">Charts</a></div>
+          <div class="text-wrapper-2"><a href="../Prof-Filtern">Prof filtern</a></div>
+          <div class="text-wrapper-2"><a href="../Kurs-Filtern">Kurs filtern</a></div>
+          <div class="text-wrapper-2"><a href="https://www.th-owl.de/" target="_blank">TH OWL</a></div>
+        </div>
+        <div class="frame">
+          <div class="kurse">
+            <div class="overlap">
+              <div class="rectangle"></div>
+              <div class="text-wrapper-3" style="cursor: pointer;">Fachbereich</div>
+              <div class="text-wrapper-4">Rang</div>
+              <div class="text-wrapper-5" style="cursor: pointer;">Kurse</div>
+              <div class="text-wrapper-6"><button (click)="onName()">Name</button></div>
+              <div class="text-wrapper-7"><button (click)="onBewertungen()">Bewertungen</button></div>
+              <div class="text-wrapper-8">Professoren filtern</div>
+              <div class="group">
+                <div class="overlap-group">
+                  <div class="text-wrapper-9"><span><img class="Prof1_Rating" src="../../assets/images/stars.png"></span></div>
+                  <div class="overlap-group-2">
+                    <div class="text-wrapper-10">#1</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="text-wrapper-11"><button (click)="onLecturerName(prof_users[0])">{{prof_names[0]}}</button></div>
+                  <div class="picture"></div>
+                  <div class="text-wrapper-12">fb5</div>
+                  <div class="text-wrapper-13">5</div>
+                </div>
+              </div>
+              <div class="overlap-wrapper">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof2_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#2</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[1])">{{prof_names[1]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-18">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="overlap-group-wrapper">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof3_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#3</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[2])">{{prof_names[2]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-18">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="overlap-4">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-19"><span><img class="Prof4_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-20"><button (click)="onLecturerName(prof_users[3])">{{prof_names[3]}}</button></div>
+                    <div class="text-wrapper-21">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="text-wrapper-23">#4</div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-2">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof5_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#5</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[4])">{{prof_names[4]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-3">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof6_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#6</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[5])">{{prof_names[5]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-4">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof7_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#7</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[6])">{{prof_names[6]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-5">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof8_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#8</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[7])">{{prof_names[7]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-6">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof9_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#9</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[8])">{{prof_names[8]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-7">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof10_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#10</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[9])">{{prof_names[9]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-8">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Prof11_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#11</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[10])">{{prof_names[10]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-9">
+                <div class="overlap-5">
+                  <div class="overlap-6">
+                    <div class="text-wrapper-14"><span><img class="Prof12_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#12</div>
+                    <div class="text-wrapper-16"><button (click)="onLecturerName(prof_users[11])">{{prof_names[11]}}</button></div>
+                    <div class="text-wrapper-17">5</div>
+                    <div class="text-wrapper-22">fb5</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="overlap-7">
+              <div class="text-wrapper-24">RANKIT</div>
+              <div class="footer-2">
+                <div class="text-wrapper-2"><a href=".">Charts</a></div>
+                <div class="text-wrapper-2"><a href="../Prof-Filtern">Prof filtern</a></div>
+                <div class="text-wrapper-2"><a href="../Kurs-Filtern">Kurs filtern</a></div>
+                <div class="text-wrapper-2"><a href="https://www.th-owl.de/" target="_blank">TH OWL</a></div>
+              </div>
+              <div class="rectangle-3"></div>
+              <div class="social">
+                <div class="frame-2">
+                  <a href="https://de.linkedin.com/school/technische-hochschule-ostwestfalen-lippe/" target="_blank"><img class="img-4" src="../../assets/images/linkedin.png" /></a>
+                  <a href="https://www.facebook.com/THOWL/?locale=de_DE" target="_blank"><img class="img-4" src="../../assets/images/Facebook.png" /></a>
+                  <a href="https://www.instagram.com/technische_hochschule_owl/" target="_blank"><img class="img-4" src="../../assets/images/Instagram.png" /></a>
+                  <a href="https://www.youtube.com/technischehochschuleowl" target="_blank"><img class="img-4" src="../../assets/images/Youtube.png" /></a>
+                </div>
+              </div>
+              <p class="p">© 2024 rankit Media. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

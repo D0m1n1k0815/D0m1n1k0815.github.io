@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="slide">
+      <div class="div">
+        <div class="text-wrapper">RANKIT</div>
+        <div class="navbar">
+          <div class="text-wrapper-2"><a href=".">Charts</a></div>
+          <div class="text-wrapper-2"><a href="../Prof-Filtern">Prof filtern</a></div>
+          <div class="text-wrapper-2"><a href="../Kurs-Filtern">Kurs filtern</a></div>
+          <div class="text-wrapper-2"><a href="https://www.th-owl.de/" target="_blank">TH OWL</a></div>
+        </div>
+        <div class="frame">
+          <div class="kurse">
+            <div class="overlap">
+              <div class="rectangle"></div>
+              <div class="text-wrapper-3"><button (click)="onNummer()">Nummer</button></div>
+              <div class="text-wrapper-4">Rang</div>
+              <div class="text-wrapper-5"><button (click)="onAbkuerzung()">Abkürzung</button></div>
+              <div class="text-wrapper-6"><button (click)="onName()">Name</button></div>
+              <div class="text-wrapper-7"><button (click)="onBewertungen()">Bewertungen</button></div>
+              <div class="text-wrapper-8">Kurse filtern</div>
+              <div class="group">
+                <div class="overlap-group">
+                  <div class="text-wrapper-9"><span><img class="Kurs1_Rating" src="../../assets/images/stars.png"></span></div>
+                  <div class="overlap-group-2">
+                    <div class="text-wrapper-10">#1</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="text-wrapper-11"><button (click)="onModuleName(module_nums[0])">{{module_names[0]}}</button></div>
+                  <div class="picture"></div>
+                  <div class="text-wrapper-12">{{module_nums[0]}}</div>
+                  <div class="text-wrapper-13">{{module_abbrevs[0]}}</div>
+                </div>
+              </div>
+              <div class="overlap-wrapper">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs2_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#2</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[1])">{{module_names[1]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[1]}}</div>
+                    <div class="text-wrapper-18">{{module_nums[1]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="overlap-group-wrapper">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs3_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#3</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[2])">{{module_names[2]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[2]}}</div>
+                    <div class="text-wrapper-18">{{module_nums[2]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="overlap-4">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-19"><span><img class="Kurs4_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-20"><button (click)="onModuleName(module_nums[3])">{{module_names[3]}}</button></div>
+                    <div class="text-wrapper-21">{{module_abbrevs[3]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[3]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="text-wrapper-23">#4</div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-2">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs5_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#5</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[4])">{{module_names[4]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[4]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[4]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-3">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs6_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#6</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[5])">{{module_names[5]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[5]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[5]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-4">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs7_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#7</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[6])">{{module_names[6]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[6]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[6]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-5">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs8_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#8</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[7])">{{module_names[7]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[7]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[7]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-6">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs9_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#9</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[8])">{{module_names[8]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[8]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[8]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-7">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs10_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#10</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[9])">{{module_names[9]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[9]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[9]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-8">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs11_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#11</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[10])">{{module_names[10]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[10]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[10]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-9">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs12_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#12</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[11])">{{module_names[11]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[11]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[11]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-10">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs13_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#13</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[12])">{{module_names[12]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[12]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[12]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-11">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs14_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#14</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[13])">{{module_names[13]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[13]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[13]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-12">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs15_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#15</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[14])">{{module_names[14]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[14]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[14]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-13">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs16_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#16</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[15])">{{module_names[15]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[15]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[15]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-14">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs17_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#17</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[16])">{{module_names[16]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[16]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[16]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-15">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs18_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#18</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[17])">{{module_names[17]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[17]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[17]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-16">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs19_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#19</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[18])">{{module_names[18]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[18]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[18]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+              <div class="group-17">
+                <div class="overlap-2">
+                  <div class="overlap-3">
+                    <div class="text-wrapper-14"><span><img class="Kurs20_Rating" src="../../assets/images/stars.png"></span></div>
+                    <div class="text-wrapper-15">#20</div>
+                    <div class="text-wrapper-16"><button (click)="onModuleName(module_nums[19])">{{module_names[19]}}</button></div>
+                    <div class="text-wrapper-17">{{module_abbrevs[19]}}</div>
+                    <div class="text-wrapper-22">{{module_nums[19]}}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="picture-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="overlap-5">
+              <div class="text-wrapper-24">RANKIT</div>
+              <div class="footer-2">
+                <div class="text-wrapper-2"><a href=".">Charts</a></div>
+                <div class="text-wrapper-2"><a href="../Prof-Filtern">Prof filtern</a></div>
+                <div class="text-wrapper-2"><a href="../Kurs-Filtern">Kurs filtern</a></div>
+                <div class="text-wrapper-2"><a href="https://www.th-owl.de/" target="_blank">TH OWL</a></div>
+              </div>
+              <div class="rectangle-3"></div>
+              <div class="social">
+                <div class="frame-2">
+                  <a href="https://de.linkedin.com/school/technische-hochschule-ostwestfalen-lippe/" target="_blank"><img class="img-4" src="../../assets/images/linkedin.png" /></a>
+                  <a href="https://www.facebook.com/THOWL/?locale=de_DE" target="_blank"><img class="img-4" src="../../assets/images/Facebook.png" /></a>
+                  <a href="https://www.instagram.com/technische_hochschule_owl/" target="_blank"><img class="img-4" src="../../assets/images/Instagram.png" /></a>
+                  <a href="https://www.youtube.com/technischehochschuleowl" target="_blank"><img class="img-4" src="../../assets/images/Youtube.png" /></a>
+                </div>
+              </div>
+              <p class="p">© 2024 rankit Media. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

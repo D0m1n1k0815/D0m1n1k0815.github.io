@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="slide">
+      <div class="div">
+        <div class="text-wrapper">RANKIT</div>
+        <div class="overlap">
+          <div class="navbar">
+            <div class="text-wrapper-2"><a onclick="scrolltoKurse()">Kurse</a></div>
+            <div class="text-wrapper-2"><a onclick="scrolltoTimeline()">Timeline</a></div>
+            <div class="text-wrapper-2"><a onclick="scrolltoBewertung()">Bewertung</a></div>
+            <div class="text-wrapper-3"><a onclick="scrolltoDich()">Für Dich</a></div>
+          </div>
+        </div>
+        <div class="navbar-2">
+          <div class="text-wrapper-4"><a href=".">Charts</a></div>
+          <div class="text-wrapper-4"><a href="../Prof-Filtern">Prof filtern</a></div>
+          <div class="text-wrapper-4"><a href="../Kurs-Filtern">Kurs filtern</a></div>
+          <div class="text-wrapper-4"><a href="https://www.th-owl.de/" target="_blank">TH OWL</a></div>
+        </div>
+        <div class="bersicht">
+          <div class="overlap-group"><img class="mask-group" src="{{lecturer.image}}" /></div>
+          <div class="text-wrapper-5">{{lecturer.name}}</div>
+          <div class="text-wrapper-6">{{lecturer.title}}</div>
+        </div>
+        <div class="frame">
+          <div class="kurse">
+            <div class="overlap-2">
+              <div class="rectangle"></div>
+              <div class="text-wrapper-7">Kurzzeichen</div>
+              <div class="text-wrapper-8">FNr</div>
+              <div class="text-wrapper-9">Kurs Art</div>
+              <div class="text-wrapper-10">Bewertung</div>
+              <div class="text-wrapper-11" id="Kurse">Kurse</div>
+              <div class="group">
+                <div class="overlap-3">
+                  <div class="text-wrapper-12">{{ DbModuleRating.calculateAverage(modules[0].rating) }}</div>
+                  <div class="overlap-group-2">
+                    <div class="text-wrapper-13">#1</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="text-wrapper-14"><button (click)="onModuleName(modules[0].num)">{{modules[0].name}}</button></div>
+                  <div class="text-wrapper-15">{{ modules[0].abbreviation }}</div>
+                  <div class="text-wrapper-16">{{ modules[0].num }}</div>
+                  <div class="text-wrapper-17">{{ languageCodeToName(modules[0].language)}}</div>
+                </div>
+              </div>
+              <div class="overlap-wrapper">
+                <div class="overlap-4">
+                  <div class="text-wrapper-18">{{ DbModuleRating.calculateAverage(modules[1].rating) }}</div>
+                  <div class="text-wrapper-19">#2</div>
+                  <div class="text-wrapper-20"><button (click)="onModuleName(modules[1].num)">{{modules[1].name}}</button></div>
+                  <div class="text-wrapper-21">{{ languageCodeToName(modules[1].language)}}</div>
+                  <div class="text-wrapper-22">{{ modules[1].num }}</div>
+                  <div class="text-wrapper-23">{{ modules[1].abbreviation }}</div>
+                  <div class="rectangle-2"></div>
+                </div>
+              </div>
+              <div class="overlap-group-wrapper">
+                <div class="overlap-4">
+                  <div class="text-wrapper-18">{{ DbModuleRating.calculateAverage(modules[2].rating) }}</div>
+                  <div class="text-wrapper-19">#3</div>
+                  <div class="text-wrapper-20"><button (click)="onModuleName(modules[2].num)">{{modules[2].name}}</button></div>
+                  <div class="text-wrapper-21">{{ languageCodeToName(modules[2].language)}}</div>
+                  <div class="text-wrapper-22">{{ modules[2].num }}</div>
+                  <div class="text-wrapper-23">{{ modules[2].abbreviation }}</div>
+                  <div class="rectangle-2"></div>
+                </div>
+              </div>
+              <div class="div-wrapper">
+                <div class="overlap-5">
+                  <div class="overlap-6">
+                    <div class="text-wrapper-24">{{ DbModuleRating.calculateAverage(modules[3].rating) }}</div>
+                    <div class="text-wrapper-25"><button (click)="onModuleName(modules[2].num)">{{modules[2].name}}</button></div>
+                    <div class="text-wrapper-26">{{ languageCodeToName(modules[3].language)}}</div>
+                    <div class="text-wrapper-27">{{ modules[3].num }}</div>
+                    <div class="text-wrapper-28">{{ modules[3].abbreviation }}</div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                  <div class="text-wrapper-29">#4</div>
+                </div>
+              </div>
+              <div class="group-2">
+                <div class="overlap-4">
+                  <div class="text-wrapper-18">{{ DbModuleRating.calculateAverage(modules[4].rating) }}</div>
+                  <div class="text-wrapper-19">#5</div>
+                  <div class="text-wrapper-20"><button (click)="onModuleName(modules[4].num)">{{modules[4].name}}</button></div>
+                  <div class="text-wrapper-21">{{ languageCodeToName(modules[4].language)}}</div>
+                  <div class="text-wrapper-27">{{ modules[4].num }}</div>
+                  <div class="text-wrapper-23">{{ modules[4].abbreviation }}</div>
+                  <div class="rectangle-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="overlap-7">
+              <div class="text-wrapper-11" id="Timeline">Timeline</div>
+              <div class="group-3">
+                <div class="overlap-8">
+                  <div class="rectangle-3"></div>
+                  <div class="text-wrapper-30">{{ lecturer.timeline[0].year }}</div>
+                  <img class="vector" src="../../assets/images/Vector 1.png" />
+                  <p class="p">
+                    {{ lecturer.timeline[0].text }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="line">
+              <div class="overlap-9">
+                <div class="overlap-group-3">
+                  <div class="rectangle-4"></div>
+                  <img class="filled-circle" src="../../assets/images/Filled Circle.png" />
+                </div>
+                <img class="img" src="../../assets/images/Filled Circle.png" />
+                <img class="filled-circle-2" src="../../assets/images/Filled Circle.png" />
+              </div>
+            </div>
+            <div class="group-4">
+              <div class="overlap-8">
+                <div class="rectangle-3"></div>
+                <div class="text-wrapper-31">{{ lecturer.timeline[2].year }}</div>
+                <img class="vector-2" src="../../assets/images/Vector 2.png" />
+                <p class="p">
+                  {{ lecturer.timeline[2].text }}
+                </p>
+              </div>
+            </div>
+            <div class="group-5">
+              <div class="overlap-10">
+                <div class="rectangle-5"></div>
+                <div class="text-wrapper-32">{{ lecturer.timeline[1].year }}</div>
+                <img class="vector-3" src="../../assets/images/Vector 3.png" />
+                <p class="text-wrapper-33">
+                  {{ lecturer.timeline[1].text }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bewertung">
+            <div class="durchschnitt">
+              <div class="overlap-group-4">
+                <div class="overlap-11">
+                  <div class="rectangle-6"></div>
+                  <div class="text-wrapper-34">Pünktlichkeit</div>
+                  <div class="text-wrapper-50"><div #Punktlichkeit class="starbox"><img src="../../assets/images/stars.png"></div></div>
+                </div>
+                <div class="overlap-12">
+                  <div class="rectangle-7"></div>
+                  <div class="text-wrapper-34">Engagement</div>
+                  <div class="text-wrapper-51"><div #Engagement class="starbox"><img src="../../assets/images/stars.png"></div></div>
+                </div>
+                <div class="overlap-13">
+                  <div class="rectangle-8"></div>
+                  <div class="text-wrapper-34">Verständlichkeit</div>
+                  <div class="text-wrapper-52"><div #Verstandlichkeit class="starbox"><img src="../../assets/images/stars.png"></div></div>
+                </div>
+                <div class="overlap-14">
+                  <div class="rectangle-9"></div>
+                  <div class="text-wrapper-34">Freundlichkeit</div>
+                  <div class="text-wrapper-53"><div #Freundlichkeit class="starbox"><img src="../../assets/images/stars.png"></div></div>
+                </div>
+                <div class="rectangle-10"></div>
+                <div class="rectangle-11"></div>
+                <div class="rectangle-12"></div>
+                <div class="rectangle-13"></div>
+              </div>
+            </div>
+            <div class="text-wrapper-11" id="Bewertung">Bewertung</div>
+          </div>
+          <div class="fr-dich">
+            <button (click)="onLecturer(suggestions[0].user)">
+            <div class="fr-dich-prof">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-35">{{ suggestions[0].title }}</div>
+                <div class="text-wrapper-36">{{ suggestions[0].name }}</div>
+                <div class="img-wrapper"><img class="mask-group-2" src="{{ suggestions[0].image }}" /></div>
+              </div>
+            </div>
+            </button><button (click)="onLecturer(suggestions[1].user)">
+            <div class="fr-dich-prof-2">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-35">{{ suggestions[1].title }}</div>
+                <div class="text-wrapper-36">{{ suggestions[1].name }}</div>
+                <div class="img-wrapper"><img class="mask-group-2" src="{{ suggestions[1].image }}" /></div>
+              </div>
+            </div>
+          </button><button (click)="onLecturer(suggestions[2].user)">
+            <div class="fr-dich-prof-3">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-35">{{ suggestions[2].title }}</div>
+                <div class="text-wrapper-36">{{ suggestions[2].name }}</div>
+                <div class="img-wrapper"><img class="mask-group-2" src="{{ suggestions[2].image }}" /></div>
+              </div>
+            </div>
+          </button><button (click)="onLecturer(suggestions[3].user)">
+            <div class="fr-dich-prof-4">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-35">{{ suggestions[3].title }}</div>
+                <div class="text-wrapper-36">{{ suggestions[3].name }}</div>
+                <div class="img-wrapper"><img class="mask-group-2" src="{{ suggestions[3].image }}" /></div>
+              </div>
+            </div>
+          </button><button (click)="onLecturer(suggestions[4].user)">
+            <div class="fr-dich-prof-5">
+              <div class="overlap-group-5">
+                <div class="text-wrapper-35">{{ suggestions[4].title }}</div>
+                <div class="text-wrapper-36">{{ suggestions[4].name }}</div>
+                <div class="img-wrapper"><img class="mask-group-2" src="{{ suggestions[4].image }}" /></div>
+              </div>
+            </div>
+          </button>
+            <div class="text-wrapper-11" id="Dich">Für Dich</div>
+          </div>
+          <div class="footer">
+            <div class="overlap-15">
+              <div class="text-wrapper-37">RANKIT</div>
+              <div class="footer-2">
+                <div class="text-wrapper-4"><a href=".">Charts</a></div>
+                <div class="text-wrapper-4"><a href="../Prof-Filtern">Prof filtern</a></div>
+                <div class="text-wrapper-4"><a href="../Kurs-Filtern">Kurs filtern</a></div>
+                <div class="text-wrapper-4"><a href="https://www.th-owl.de/" target="_blank">TH OWL</a></div>
+              </div>
+              <div class="rectangle-14"></div>
+              <div class="social">
+                <div class="frame-2">
+                  <a href="https://de.linkedin.com/school/technische-hochschule-ostwestfalen-lippe/" target="_blank"><img class="img-4" src="../../assets/images/linkedin.png" /></a>
+                  <a href="https://www.facebook.com/THOWL/?locale=de_DE" target="_blank"><img class="img-4" src="../../assets/images/Facebook.png" /></a>
+                  <a href="https://www.instagram.com/technische_hochschule_owl/" target="_blank"><img class="img-4" src="../../assets/images/Instagram.png" /></a>
+                  <a href="https://www.youtube.com/technischehochschuleowl" target="_blank"><img class="img-4" src="../../assets/images/Youtube.png" /></a>
+                </div>
+              </div>
+              <p class="text-wrapper-38">© 2024 rankit Media. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
