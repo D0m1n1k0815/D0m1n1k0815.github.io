@@ -143,3 +143,56 @@
     letter-spacing: 0;
     line-height: normal;
   }
+
+  .slide .rectangle-2 {
+    position: absolute;
+    width: 1620px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: #7f7f7f;
+  }
+  
+  .slide .text-wrapper-9 {
+    position: absolute;
+    width: 449px;
+    margin-top: 26px;
+    top: 12px;
+    left: 234px;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 500;
+    color: #17202a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-10 {
+    position: absolute;
+    width: 214px;
+    margin-top: 26px;
+    top: 12px;
+    left: 938px;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-11 {
+    position: absolute;
+    width: 214px;
+    margin-top: 26px;
+    top: 12px;
+    left: 1172px;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
