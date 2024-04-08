@@ -1,0 +1,188 @@
+.slide .text-wrapper-7 {
+    position: absolute;
+    width: 214px;
+    top: 119px;
+    left: 704px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #17202A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-8 {
+    position: absolute;
+    width: 215px;
+    top: 119px;
+    left: 938px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #17202A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-9 {
+    position: absolute;
+    width: 214px;
+    top: 119px;
+    left: 1173px;
+    color: #17202A;
+    text-align: center;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-10 {
+    position: absolute;
+    width: 214px;
+    top: 119px;
+    left: 1407px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #17202A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-11 {
+    position: absolute;
+    width: 636px;
+    top: 0;
+    left: 0;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 400;
+    color: #1565C0;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .group {
+    position: absolute;
+    width: 1632px;
+    height: 100px;
+    top: 164px;
+    left: 1px;
+  }
+  
+  .slide .overlap-3 {
+    position: relative;
+    width: 1620px;
+    height: 100px;
+  }
+  
+  .slide .text-wrapper-12 {
+    position: absolute;
+    width: 211px;
+    margin-top: 26px;
+    top: 12px;
+    left: 1406px;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 500;
+    color: #17202A;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .overlap-group-2 {
+    position: absolute;
+    width: 1620px;
+    height: 100px;
+    top: 0;
+    left: 0;
+  }
+  
+  .slide .text-wrapper-13 {
+    width: 75px;
+    margin-top: 40px;
+    top: 0;
+    left: 0;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 700;
+    color: #7f7f7f;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .rectangle-2 {
+    position: absolute;
+    width: 1620px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: #7f7f7f;
+  }
+  
+  .slide .text-wrapper-14 {
+    position: absolute;
+    width: 449px;
+    margin-top: 26px;
+    top: 12px;
+    left: 234px;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 500;
+    color: #17202A;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-15 {
+    position: absolute;
+    width: 214px;
+    margin-top: 26px;
+    top: 12px;
+    left: 703px;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-16 {
+    top: 12px;
+    position: absolute;
+    width: 214px;
+    margin-top: 26px;
+    left: 938px;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .slide .text-wrapper-17 {
+    position: absolute;
+    width: 214px;
+    margin-top: 26px;
+    top: 12px;
+    left: 1172px;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
